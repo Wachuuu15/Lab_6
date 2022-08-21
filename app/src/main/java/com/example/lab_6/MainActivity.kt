@@ -2,6 +2,8 @@ package com.example.lab_6
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -19,11 +21,20 @@ class MainActivity : AppCompatActivity() {
             // Dependiendo el item del menu, mostramos el fragment deseado
             when(it.itemId) {
                 R.id.menu_option_home -> TODO()
-                R.id.menu_option_search -> TODO()
-                R.id.menu_option_library -> TODO()
+                R.id.menu_option_search -> setFragment(SearchFragment())
+                R.id.menu_option_library -> setFragment(LibraryFragment())
             }
             true
         }
     }
+
+    private fun setFragment(fragment: Fragment) {
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            replace(R.id.fragmentContainerView, fragment)
+        }
+    }
+
+
 
 }

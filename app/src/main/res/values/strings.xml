@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Lab_6</string>
     <string name="welcome">Good morning, Jennifer</string>
+    <string name="library">Your Library</string>
+    <string name="flechitas">Most recent</string>
+    <string name="corazoncito">Liked Songs</string>
+    <string name="mas">+</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
