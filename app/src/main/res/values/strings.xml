@@ -5,6 +5,8 @@
     <string name="flechitas">Most recent</string>
     <string name="corazoncito">Liked Songs</string>
     <string name="mas">+</string>
+    <string name="busca">Search</string>
+    <string name="txt">Your top genres</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

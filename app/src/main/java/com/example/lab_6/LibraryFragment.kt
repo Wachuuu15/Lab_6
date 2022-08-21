@@ -7,11 +7,12 @@ import android.widget.Button
 import android.widget.TextView
 
 
-class LibraryFragment : Fragment() {
-
+class LibraryFragment : Fragment(R.layout.fragment_library) {
     private lateinit var buttonCount: Button
     private lateinit var TextBox : TextView
     private var count: Int = 0
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
