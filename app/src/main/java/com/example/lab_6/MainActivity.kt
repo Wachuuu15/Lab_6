@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         bottomNav.setOnItemSelectedListener {
             // Dependiendo el item del menu, mostramos el fragment deseado
             when(it.itemId) {
-                R.id.menu_option_home -> TODO()
+                R.id.menu_option_home -> setFragment(HomeFragment())
                 R.id.menu_option_search -> setFragment(SearchFragment())
                 R.id.menu_option_library -> setFragment(LibraryFragment())
             }
