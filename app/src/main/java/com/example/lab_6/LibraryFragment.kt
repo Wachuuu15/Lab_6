@@ -24,10 +24,10 @@ class LibraryFragment : Fragment(R.layout.fragment_library) {
     }
 
 
-    private fun setListeners(){
-        buttonCount.setOnClickListener{
+    private fun setListeners() {
+        buttonCount.setOnClickListener {
             count++
-            Texto.text = buttonCount.toString()
+            Texto.setText(count.toString())
         }
     }
 
